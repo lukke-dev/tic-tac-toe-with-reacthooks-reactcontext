@@ -1,0 +1,59 @@
+.board-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.board-container h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 20px 20px 20px;
+}
+
+
+.board button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15vh;
+    background-color: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.board button::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reset button, .history button{
+    background-color: yellow;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.history {
+    text-align: center;
+    margin: 10px 
+}
+
+.winner {
+    font-size: 5vw;
+    color: rgba(24, 196, 24, 0.9);
+
+}
